@@ -4,223 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naibe Mehari Tekle — Software Engineer</title>
+<meta name="description" content="Naibe Mehari Tekle — Software Engineer and Data Engineering student. Full-stack developer specializing in C#/.NET, React, and industrial software. Based in Norway.">
+<meta property="og:title" content="Naibe Mehari Tekle — Software Engineer">
+<meta property="og:description" content="Full-stack developer specializing in C#/.NET, React, and industrial software. Based in Norway.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naibtech.dev/">
+<meta property="og:image" content="https://naibtech.dev/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://naibtech.dev/og-image.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --gold:#C9963A; --gold-light:#E8C06A; --gold-pale:#F5E6C3;
-  --terra:#B85C38; --terra-dk:#7A2E10;
-  --grn:#1B4A3A; --grn-mid:#2D6B55;
-  --cream:#FAF5EC; --ink:#1A1208; --ink-m:#5C4A2A;
-  --pat:rgba(201,150,58,0.09);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font-family:'Archivo',sans-serif;overflow-x:hidden}
-
-/* particles */
-#cvs{position:fixed;inset:0;z-index:0;pointer-events:none}
-
-/* grid bg */
-.gbg{position:fixed;inset:0;z-index:0;pointer-events:none;
-background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,var(--pat) 40px),
-repeating-linear-gradient(90deg,transparent,transparent 39px,var(--pat) 40px)}
-
-/* cursor */
-.cd{position:fixed;width:8px;height:8px;background:var(--gold);border-radius:50%;
-pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
-.cr{position:fixed;width:32px;height:32px;border:1.5px solid var(--gold);border-radius:50%;
-pointer-events:none;z-index:9998;transform:translate(-50%,-50%);opacity:.55;transition:all .1s ease-out}
-
-/* nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;
-padding:1.2rem 4rem;background:rgba(250,245,236,.9);backdrop-filter:blur(16px);
-border-bottom:1px solid rgba(201,150,58,.18);transform:translateY(-100%);
-animation:navIn .7s .3s ease forwards}
-@keyframes navIn{to{transform:translateY(0)}}
-.logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--gold);letter-spacing:.05em}
-.logo span{color:var(--terra)}
-.nl{display:flex;gap:2.5rem;list-style:none}
-.nl a{font-size:.78rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-m);
-text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s;position:relative}
-.nl a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--gold);transition:width .3s}
-.nl a:hover{color:var(--gold)}.nl a:hover::after{width:100%}
-
-/* hero */
-#hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:7rem 5rem 4rem;overflow:hidden}
-.hcross{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:580px;height:580px;opacity:.055;
-animation:spin 60s linear infinite}
-@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
-.hc{position:relative;z-index:1;max-width:720px}
-.hl{font-family:'DM Mono',monospace;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
-color:var(--terra);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem;
-opacity:0;animation:fu .6s .5s ease forwards}
-.hl::before{content:'';display:inline-block;width:32px;height:1px;background:var(--terra)}
-.hn{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,8vw,6.5rem);font-weight:900;line-height:1;color:var(--ink);
-opacity:0;animation:fu .7s .65s ease forwards}
-.hn .gld{color:var(--gold)}
-.hn .str{position:relative;color:var(--terra);display:inline-block}
-.hn .str::after{content:'';position:absolute;bottom:6px;left:0;right:0;height:3px;background:var(--grn);opacity:.5;
-transform:scaleX(0);transform-origin:left;animation:lg .8s 1.6s ease forwards}
-@keyframes lg{to{transform:scaleX(1)}}
-.hr{font-family:'DM Mono',monospace;font-size:1rem;color:var(--grn);margin:1rem 0 1.5rem;
-opacity:0;animation:fu .6s .85s ease forwards}
-.htags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem;opacity:0;animation:fu .6s 1s ease forwards}
-.htag{font-family:'DM Mono',monospace;font-size:.68rem;padding:.28rem .75rem;letter-spacing:.07em;
-background:rgba(201,150,58,.11);color:var(--terra-dk);border:1px solid rgba(201,150,58,.3)}
-.hcta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fu .6s 1.15s ease forwards}
-.bp{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2.2rem;background:var(--gold);color:var(--ink);
-font-family:'DM Mono',monospace;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
-text-decoration:none;cursor:pointer;transition:all .25s;border:none;
-clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%)}
-.bp:hover{background:var(--gold-light);transform:translateY(-3px)}
-.bo{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2.2rem;background:transparent;color:var(--grn);
-font-family:'DM Mono',monospace;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
-text-decoration:none;border:1.5px solid var(--grn);cursor:pointer;transition:all .25s}
-.bo:hover{background:var(--grn);color:var(--cream)}
-
-/* stripe */
-.stripe{height:6px;position:relative;z-index:1;
-background:linear-gradient(90deg,var(--terra) 33%,var(--gold) 33% 66%,var(--grn) 66%);
-transform:scaleX(0);transform-origin:left;animation:strv 1s 1.5s ease forwards}
-@keyframes strv{to{transform:scaleX(1)}}
-
-/* sections */
-section{position:relative;z-index:1;padding:7rem 5rem}
-.sl{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
-.st{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:700;color:var(--ink);line-height:1.1;margin-bottom:3rem}
-.st .a{color:var(--terra)}
-
-/* about */
-#about{background:var(--grn);color:var(--cream)}
-#about .st{color:var(--cream)} #about .sl{color:var(--gold-light)} #about .a{color:var(--gold-light)}
-.ag{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.at p{font-size:1.05rem;line-height:1.9;color:rgba(250,245,236,.82);margin-bottom:1.2rem}
-.srow{display:flex;gap:3rem;margin-top:2.5rem;flex-wrap:wrap}
-.sn{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--gold);line-height:1}
-.slab{font-family:'DM Mono',monospace;font-size:.68rem;color:rgba(250,245,236,.6);letter-spacing:.1em;text-transform:uppercase;margin-top:.2rem}
-.lr{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem}
-.lp{display:flex;align-items:center;gap:.6rem;padding:.5rem 1rem;
-background:rgba(255,255,255,.06);border:1px solid rgba(201,150,58,.28);
-font-family:'DM Mono',monospace;font-size:.74rem;color:var(--gold-light);letter-spacing:.07em;
-transition:background .2s,transform .2s}
-.lp:hover{background:rgba(201,150,58,.15);transform:translateY(-2px)}
-.af{display:flex;flex-direction:column;gap:1.2rem}
-.fc{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 1.4rem;
-background:rgba(255,255,255,.05);border-left:3px solid var(--gold);transition:all .2s}
-.fc:hover{border-color:var(--gold-light);background:rgba(255,255,255,.09)}
-.fi{font-size:1.2rem;margin-top:2px}
-.fc h4{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.1em;color:var(--gold-light);text-transform:uppercase;margin-bottom:.3rem}
-.fc p{font-size:.9rem;color:rgba(250,245,236,.75);margin:0}
-
-/* skills */
-#skills{background:var(--cream)}
-.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
-.sc{padding:1.8rem;background:white;border:1px solid rgba(201,150,58,.2);position:relative;overflow:hidden;
-transition:transform .3s,border-color .3s,box-shadow .3s}
-.sc::before{content:'';position:absolute;top:0;left:0;height:3px;width:0;background:var(--gold);transition:width .4s}
-.sc:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 12px 32px rgba(201,150,58,.12)}
-.sc:hover::before{width:100%}
-.si{width:44px;height:44px;background:var(--gold-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem}
-.sc h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:.8rem;color:var(--ink)}
-.tgs{display:flex;flex-wrap:wrap;gap:.4rem}
-.tg{font-family:'DM Mono',monospace;font-size:.67rem;padding:.27rem .6rem;background:var(--gold-pale);color:var(--terra-dk);letter-spacing:.04em;transition:all .2s}
-.tg:hover{background:var(--gold);color:white}
-.tg.g{background:rgba(27,74,58,.1);color:var(--grn)}.tg.g:hover{background:var(--grn);color:white}
-
-/* experience */
-#experience{background:linear-gradient(140deg,var(--ink) 0%,#2C1A08 100%);color:var(--cream)}
-#experience .st{color:var(--cream)} #experience .sl{color:var(--gold)} #experience .a{color:var(--gold)}
-.ei{display:grid;grid-template-columns:160px 1fr;gap:2rem;padding:2.5rem 0;border-bottom:1px solid rgba(201,150,58,.12);position:relative}
-.edot{position:absolute;left:160px;top:2.8rem;width:14px;height:14px;background:var(--gold);transform:rotate(45deg) translateX(-7px);transition:background .2s}
-.ei:hover .edot{background:var(--gold-light)}
-.edate{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--gold);letter-spacing:.1em;text-align:right;padding-top:4px}
-.ec h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream);margin-bottom:.2rem}
-.eco{font-size:.82rem;color:var(--gold-light);margin-bottom:.75rem;font-family:'DM Mono',monospace}
-.ec p{font-size:.93rem;line-height:1.75;color:rgba(250,245,236,.68)}
-
-/* projects */
-#projects{background:var(--cream)}
-.pf{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.fb{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.45rem 1.1rem;
-background:transparent;color:var(--ink-m);border:1px solid rgba(201,150,58,.3);cursor:pointer;transition:all .2s}
-.fb:hover,.fb.active{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.8rem}
-.pc{background:white;border:1px solid rgba(201,150,58,.18);overflow:hidden;position:relative;
-transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .3s}
-.pc:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 16px 40px rgba(26,18,8,.1)}
-.pb_{height:5px}
-.pb_.c{background:linear-gradient(90deg,#6A3FA0,var(--gold))}
-.pb_.g{background:linear-gradient(90deg,var(--grn),#4CAF80)}
-.pb_.t{background:linear-gradient(90deg,var(--terra-dk),var(--terra))}
-.pb_.b{background:linear-gradient(90deg,#1565C0,#42A5F5)}
-.pb_.o{background:linear-gradient(90deg,#E65100,var(--gold))}
-.pbd{padding:1.6rem}
-.pn{font-family:'DM Mono',monospace;font-size:.67rem;color:var(--gold);letter-spacing:.2em;margin-bottom:.6rem}
-.pbd h3{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:.6rem;color:var(--ink)}
-.pbd p{font-size:.88rem;line-height:1.7;color:var(--ink-m);margin-bottom:1.1rem}
-.plnks{display:flex;gap:.6rem;margin-top:1rem}
-.pla{font-family:'DM Mono',monospace;font-size:.68rem;padding:.35rem .85rem;letter-spacing:.06em;
-text-decoration:none;border:1px solid rgba(201,150,58,.35);color:var(--ink-m);transition:all .2s;display:inline-flex;align-items:center;gap:.3rem}
-.pla:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.plb{position:absolute;top:1rem;right:1rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.05em;
-padding:.2rem .5rem;background:var(--gold-pale);color:var(--terra-dk)}
-
-/* education */
-#education{background:#F0EAD8}
-.el{position:relative;padding-left:2.5rem}
-.el::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
-background:linear-gradient(to bottom,var(--gold),var(--terra),var(--grn))}
-.eit{position:relative;margin-bottom:2.5rem;padding-left:2rem;transition:transform .2s}
-.eit:hover{transform:translateX(6px)}
-.eit::before{content:'';position:absolute;left:-7px;top:8px;width:12px;height:12px;
-background:var(--gold);transform:rotate(45deg);transition:background .2s}
-.eit:hover::before{background:var(--terra)}
-.eyr{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--terra);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
-.eit h3{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.2rem}
-.eit p{font-size:.85rem;color:var(--ink-m)}
-.ethdiv{display:flex;align-items:center;gap:1rem;margin:3.5rem 0 2rem}
-.ethdiv::before,.ethdiv::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
-.ethdiv span{color:var(--gold);font-size:1.2rem}
-.cg{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
-.cc{padding:1rem 1.4rem;background:white;border:1px solid rgba(201,150,58,.25);transition:transform .2s,border-color .2s}
-.cc:hover{transform:translateY(-3px);border-color:var(--gold)}
-.clb{font-family:'DM Mono',monospace;font-size:.63rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.3rem}
-.cc strong{font-size:.9rem;color:var(--ink)}
-.cc p{font-size:.78rem;color:var(--ink-m);margin-top:.2rem}
-
-/* contact */
-#contact{background:var(--terra);color:var(--cream);text-align:center}
-#contact .st{color:var(--cream)} #contact .sl{color:rgba(250,245,236,.6)}
-.cdesc{font-size:1.05rem;line-height:1.8;opacity:.88;max-width:500px;margin:0 auto 3rem}
-.cls{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
-.cla{display:flex;align-items:center;gap:.6rem;padding:.9rem 1.6rem;background:rgba(255,255,255,.1);
-color:var(--cream);text-decoration:none;font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.07em;
-border:1px solid rgba(255,255,255,.22);transition:all .25s}
-.cla:hover{background:rgba(255,255,255,.22);transform:translateY(-3px)}
-
-/* footer */
-footer{position:relative;z-index:1;background:var(--ink);color:rgba(250,245,236,.45);text-align:center;
-padding:2rem;font-family:'DM Mono',monospace;font-size:.73rem;letter-spacing:.05em}
-footer span{color:var(--gold)}
-
-/* reveal */
-.r{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
-.r.v{opacity:1;transform:none}
-.r.lft{transform:translateX(-28px)}.r.rgt{transform:translateX(28px)}
-.r.lft.v,.r.rgt.v{transform:none}
-
-/* typed */
-#typed::after{content:'|';animation:bl 1s step-end infinite;color:var(--terra)}
-@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
-@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-
-@media(max-width:768px){
-  nav{padding:1rem 1.5rem} .nl{display:none}
-  section{padding:4rem 1.5rem} #hero{padding:6rem 1.5rem 4rem}
-  .ag{grid-template-columns:1fr} .ei{grid-template-columns:1fr} .edot{display:none}
-  .edate{text-align:left}
-}
-</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231A1208'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23C9963A'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -228,6 +22,16 @@ footer span{color:var(--gold)}
 <div class="gbg"></div>
 <div class="cd" id="cdot"></div>
 <div class="cr" id="cring"></div>
+
+<!-- mobile nav overlay -->
+<div class="mnav" id="mnav" aria-hidden="true">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
 
 <nav>
   <div class="logo">N<span>.</span>Mehari</div>
@@ -239,8 +43,14 @@ footer span{color:var(--gold)}
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
+<button class="stt" id="stt" aria-label="Scroll to top">↑</button>
+
+<!-- HERO -->
 <section id="hero">
   <svg class="hcross" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <g stroke="#C9963A" fill="none" stroke-width="1.2">
@@ -266,7 +76,7 @@ footer span{color:var(--gold)}
     </div>
     <div class="hcta">
       <a href="#projects" class="bp">View Projects →</a>
-      <a href="https://github.com/naibwedi" target="_blank" class="bo">GitHub ⌥</a>
+      <a href="https://github.com/naibwedi" target="_blank" rel="noopener noreferrer" class="bo">GitHub ↗</a>
     </div>
   </div>
 </section>
@@ -278,13 +88,13 @@ footer span{color:var(--gold)}
   <div class="sl">01 / About</div>
   <h2 class="st r">Who I <span class="a">Am</span></h2>
   <div class="ag">
-    <div class="r lft">
-      <p>I'm a software developer and third-year Computer Engineering student. I blend technical precision with creative instinct — integrating live PLC data in industrial C#/.NET apps, building AI-powered marketplaces in React, or crafting a Tigrigna-to-Latin translator that celebrates Habesha heritage in code.</p>
-      <p>Proud of my roots. Driven by curiosity. Building things that matter.</p>
+    <div class="at r lft">
+      <div class="avatar">NMT</div>
+      <p>I'm a software developer and Computer Engineering student who builds across the full stack — desktop, web, and mobile. I care about both how things work and how they feel to use. My background covers software development, automation, and UI/UX design — and I enjoy working close to both the code and the people it's built for.</p>
       <div class="srow">
-        <div class="stat"><div class="sn" data-target="28">0</div><div class="slab">GitHub Repos</div></div>
+        <div class="stat"><div class="sn" data-target="29">0</div><div class="slab">GitHub Repos</div></div>
         <div class="stat"><div class="sn" data-target="4">0</div><div class="slab">Languages Spoken</div></div>
-        <div class="stat"><div class="sn" data-target="7">0</div><div class="slab">Projects Built</div></div>
+        <div class="stat"><div class="sn" data-target="11">0</div><div class="slab">Projects Built</div></div>
       </div>
       <div class="lr">
         <div class="lp">🇳🇴 Norsk</div>
@@ -298,7 +108,7 @@ footer span{color:var(--gold)}
         <div class="fc"><div class="fi">🎓</div><div><h4>Education</h4><p>Ingeniørfag – Data (Bachelor), UiA (2023–2026)</p></div></div>
         <div class="fc"><div class="fi">💼</div><div><h4>Current Role</h4><p>Software Developer (deltid) — Red Rock</p></div></div>
         <div class="fc"><div class="fi">⚙️</div><div><h4>Focus Areas</h4><p>Full-stack, industrial software, UI/UX, data engineering</p></div></div>
-        <div class="fc"><div class="fi">✦</div><div><h4>Heritage</h4><p>Habesha — Eritrean roots, Norwegian home, global mindset</p></div></div>
+        <div class="fc"><div class="fi">🌍</div><div><h4>Languages</h4><p>Norwegian, English, Tigrigna, Arabic</p></div></div>
         <div class="fc"><div class="fi">🚗</div><div><h4>Driving License</h4><p>Klasse B</p></div></div>
       </div>
     </div>
@@ -348,6 +158,7 @@ footer span{color:var(--gold)}
     <button class="fb" data-f="web">Web</button>
     <button class="fb" data-f="csharp">C# / .NET</button>
     <button class="fb" data-f="mobile">Mobile</button>
+    <button class="fb" data-f="systems">Systems</button>
     <button class="fb" data-f="algo">Algorithms</button>
   </div>
   <div class="pg" id="pg">
@@ -358,25 +169,25 @@ footer span{color:var(--gold)}
       <div class="pbd">
         <div class="pn">PROJ 01 · 2024 · ⭐1</div>
         <h3>Tigrigna → Latin Translator</h3>
-        <p>A web tool translating Geez (ግዕዝ) alphabets and numbers to Latin. A personal project celebrating Eritrean heritage — live on Netlify. Built with vanilla HTML/CSS/JS.</p>
+        <p>A web tool translating Geez (ግዕዝ) alphabets and numbers to Latin. Live on Netlify. Built with vanilla HTML/CSS/JS.</p>
         <div class="tgs"><span class="tg">HTML</span><span class="tg">CSS</span><span class="tg">JavaScript</span><span class="tg">Geez script</span></div>
         <div class="plnks">
-          <a href="https://tigrigna-latin.netlify.app/" target="_blank" class="pla">Live Demo ↗</a>
-          <a href="https://github.com/naibwedi/Tigrigna-to-latin-traslator" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://tigrigna-latin.netlify.app/" target="_blank" rel="noopener noreferrer" class="pla">Live Demo ↗</a>
+          <a href="https://github.com/naibwedi/Tigrigna-to-latin-traslator" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
 
-    <div class="pc r" data-c="web">
+    <div class="pc r" data-c="mobile">
       <div class="pb_ t"></div>
-      <span class="plb">React · Python · AI</span>
+      <span class="plb">TypeScript · React Native</span>
       <div class="pbd">
-        <div class="pn">PROJ 02 · May 2025</div>
+        <div class="pn">PROJ 02 · 2025</div>
         <h3>CampusCart</h3>
-        <p>Student marketplace for buying/selling used items. Integrated an AI content moderation filter that automatically detects and removes illegal or sensitive content from uploaded images.</p>
-        <div class="tgs"><span class="tg">React</span><span class="tg">Python</span><span class="tg">AI / Computer Vision</span><span class="tg">REST API</span></div>
+        <p>Mobile marketplace for students to buy and sell second-hand items. Includes AI content moderation that automatically flags and removes inappropriate images before listing.</p>
+        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">AI / Computer Vision</span><span class="tg">REST API</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/Campus-Cart-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -390,7 +201,7 @@ footer span{color:var(--gold)}
         <p>Full-stack ASP.NET MVC logistics/transport management app. Real-time updates via SignalR Hubs, EF + SQLite, identity auth, Validators, Services layers, and Docker containerization.</p>
         <div class="tgs"><span class="tg g">C#</span><span class="tg g">ASP.NET MVC</span><span class="tg g">SignalR</span><span class="tg g">Entity Framework</span><span class="tg g">Docker</span><span class="tg g">SQLite</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Logi-Track" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/Logi-Track" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -404,21 +215,21 @@ footer span{color:var(--gold)}
         <p>React Native mobile app for educators to track student assessments. Full CRUD for students, courses, and grades. Firebase backend. 97% TypeScript. Built with Expo.</p>
         <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Student-Assesment-App" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/Student-Assesment-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
 
-    <div class="pc r" data-c="algo">
-      <div class="pb_ o"></div>
-      <span class="plb">C++</span>
+    <div class="pc r" data-c="mobile">
+      <div class="pb_ c"></div>
+      <span class="plb">Dart · Flutter · Kotlin</span>
       <div class="pbd">
-        <div class="pn">PROJ 05 · 2024</div>
-        <h3>Infix → Postfix Converter</h3>
-        <p>C++ program evaluating complex math: converts infix to postfix using stack-based algorithms. Supports sin, cos, log, π, exponentiation, and variable detection.</p>
-        <div class="tgs"><span class="tg">C++</span><span class="tg">Stack / Algorithms</span><span class="tg">Math parsing</span></div>
+        <div class="pn">PROJ 05 · 2026</div>
+        <h3>FlowLingo</h3>
+        <p>Android translation keyboard app. A native Kotlin IME layer handles keyboard input behavior while Flutter powers the settings, onboarding, and subscription flows.</p>
+        <div class="tgs"><span class="tg">Dart</span><span class="tg">Flutter</span><span class="tg">Kotlin</span><span class="tg">Android IME</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/infix-to-postfix-converter" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/FlowLingo" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -432,7 +243,7 @@ footer span{color:var(--gold)}
         <p>Transport management CLI application — part of a larger logistics suite. User-friendly command-line interface for managing transport operations and workflows.</p>
         <div class="tgs"><span class="tg g">C#</span><span class="tg g">.NET</span><span class="tg g">CLI</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Pritra-console-App" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/Pritra-console-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -446,7 +257,63 @@ footer span{color:var(--gold)}
         <p>Classic two-player tic-tac-toe game in vanilla JavaScript with clean UI, game state management, win detection logic, and turn-based play.</p>
         <div class="tgs"><span class="tg">JavaScript</span><span class="tg">HTML</span><span class="tg">CSS</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Tic-tac-toe-App" target="_blank" class="pla">GitHub ⌥</a>
+          <a href="https://github.com/naibwedi/Tic-tac-toe-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc r" data-c="algo">
+      <div class="pb_ o"></div>
+      <span class="plb">C++</span>
+      <div class="pbd">
+        <div class="pn">PROJ 08 · 2024</div>
+        <h3>Infix → Postfix Converter</h3>
+        <p>C++ program evaluating complex math: converts infix to postfix using stack-based algorithms. Supports sin, cos, log, π, exponentiation, and variable detection.</p>
+        <div class="tgs"><span class="tg">C++</span><span class="tg">Stack / Algorithms</span><span class="tg">Math parsing</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/infix-to-postfix-converter" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc r" data-c="systems">
+      <div class="pb_ g"></div>
+      <span class="plb">C · Assembly</span>
+      <div class="pbd">
+        <div class="pn">PROJ 09 · 2025</div>
+        <h3>OS Development (IKT218)</h3>
+        <p>Operating system built from scratch as part of university coursework. Covers bootloader implementation, memory management, interrupt handling, and basic process scheduling.</p>
+        <div class="tgs"><span class="tg">C</span><span class="tg">Assembly</span><span class="tg">OS Development</span><span class="tg">Memory Management</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/2025-ikt218-osdev" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc r" data-c="systems">
+      <div class="pb_ o"></div>
+      <span class="plb">C++ · Embedded</span>
+      <div class="pbd">
+        <div class="pn">PROJ 10 · 2024</div>
+        <h3>Mbed OS Embedded Project</h3>
+        <p>Embedded systems project running on microcontroller hardware with Mbed OS. Covers hardware interfacing, sensor data handling, and real-time task execution.</p>
+        <div class="tgs"><span class="tg">C++</span><span class="tg">Mbed OS</span><span class="tg">Embedded Systems</span><span class="tg">IoT</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/Mbed-OS-project-" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc r" data-c="algo">
+      <div class="pb_ t"></div>
+      <span class="plb">Scala</span>
+      <div class="pbd">
+        <div class="pn">PROJ 11 · 2024</div>
+        <h3>Scala Functional Programming</h3>
+        <p>Functional programming project in Scala covering immutable data structures, higher-order functions, pattern matching, and type-safe abstractions.</p>
+        <div class="tgs"><span class="tg">Scala</span><span class="tg">Functional Programming</span><span class="tg">Data Structures</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/scala-project" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -462,6 +329,7 @@ footer span{color:var(--gold)}
   <h2 class="st r">My <span class="a">Journey</span></h2>
   <div class="el">
     <div class="eit r"><div class="eyr">2023 – 2026</div><h3>Ingeniørfag – Data (Bachelor, 3rd year)</h3><p>Universitetet i Agder (UiA)</p></div>
+    <div class="eit r"><div class="eyr">2021 – 2023</div><h3>Self-study &amp; Professional Development</h3><p>Web development, networking, and UX design via Domestika, Udemy, and freeCodeCamp</p></div>
     <div class="eit r"><div class="eyr">2020 – 2021</div><h3>IKT Servicefag (Vg2)</h3><p>Sjøvegan VGS</p></div>
     <div class="eit r"><div class="eyr">2019 – 2020</div><h3>Elektrofag (Vg1)</h3><p>Bardufoss VGS</p></div>
     <div class="eit r"><div class="eyr">2018 – 2019</div><h3>Ungdomsskole</h3><p>Finnsnes Ungdomsskole</p></div>
@@ -481,93 +349,21 @@ footer span{color:var(--gold)}
 <section id="contact">
   <div class="sl">06 / Contact</div>
   <h2 class="st r">Let's <span style="color:var(--gold-pale)">Connect</span></h2>
-  <p class="cdesc r">Open to internships, collaborations, and interesting projects. Let's build something great together.</p>
+  <p class="cdesc r">Open to full-time positions, collaborations and interesting projects. Let's build something great together.</p>
   <div class="cls r">
     <a href="mailto:naibmehari@gmail.com" class="cla">✉ naibmehari@gmail.com</a>
     <a href="tel:+4745538178" class="cla">☎ +47 455 38 178</a>
-    <a href="https://github.com/naibwedi" target="_blank" class="cla">⌥ github.com/naibwedi</a>
-    <a href="https://tigrigna-latin.netlify.app/" target="_blank" class="cla">↗ Live Project</a>
+    <a href="https://github.com/naibwedi" target="_blank" rel="noopener noreferrer" class="cla">↗ github.com/naibwedi</a>
+    <a href="https://www.linkedin.com/in/naib-mehari-95690114a/" target="_blank" rel="noopener noreferrer" class="cla">in LinkedIn</a>
+    <a href="https://tigrigna-latin.netlify.app/" target="_blank" rel="noopener noreferrer" class="cla">↗ Live Project</a>
   </div>
 </section>
 
 <footer>
   <div class="stripe" style="margin-bottom:1.5rem"></div>
-  Built by <span>Naibe Mehari Tekle</span> · Habesha proud ✦ · 28 repos &amp; counting
+  Built by <span>Naibe Mehari Tekle</span>
 </footer>
 
-<script>
-// PARTICLES
-const cvs = document.getElementById('cvs');
-const ctx2 = cvs.getContext('2d');
-let W,H,pts=[];
-function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight}
-function mkP(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.8+.4,a:Math.random()}}
-function init(){pts=[];const n=Math.min(70,Math.floor(W*H/14000));for(let i=0;i<n;i++)pts.push(mkP())}
-function draw(){
-  ctx2.clearRect(0,0,W,H);
-  pts.forEach(p=>{
-    p.x+=p.vx;p.y+=p.vy;
-    if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;
-    ctx2.beginPath();ctx2.arc(p.x,p.y,p.r,0,Math.PI*2);
-    ctx2.fillStyle=`rgba(201,150,58,${p.a*.3})`;ctx2.fill();
-  });
-  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
-    const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
-    if(d<110){ctx2.beginPath();ctx2.moveTo(pts[i].x,pts[i].y);ctx2.lineTo(pts[j].x,pts[j].y);
-    ctx2.strokeStyle=`rgba(201,150,58,${.08*(1-d/110)})`;ctx2.lineWidth=.5;ctx2.stroke()}
-  }
-  requestAnimationFrame(draw);
-}
-resize();init();draw();
-window.addEventListener('resize',()=>{resize();init()});
-
-// CURSOR
-const cdot=document.getElementById('cdot'),cring=document.getElementById('cring');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function ac(){rx+=(mx-rx)*.14;ry+=(my-ry)*.14;
-cdot.style.left=mx+'px';cdot.style.top=my+'px';
-cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(ac)})();
-
-// SCROLL REVEAL
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.r').forEach((el,i)=>{el.style.transitionDelay=(i%6)*.07+'s';obs.observe(el)});
-
-// COUNTER
-const co=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){
-  const el=e.target,t=parseInt(el.dataset.target);let c=0;
-  const tm=setInterval(()=>{c=Math.min(c+1,t);el.textContent=c;if(c>=t)clearInterval(tm)},50);
-  co.unobserve(el)}})},{threshold:.5});
-document.querySelectorAll('[data-target]').forEach(el=>co.observe(el));
-
-// TYPED
-const roles=['Full-Stack Developer','Data Engineer','UI/UX Designer','C# / .NET Specialist','React Developer','Mobile App Builder'];
-let ri=0,ci=0,del=false;
-const tel=document.getElementById('typed');
-function type(){const r=roles[ri];
-  if(!del){tel.textContent=r.slice(0,++ci);if(ci===r.length){del=true;setTimeout(type,1800);return}}
-  else{tel.textContent=r.slice(0,--ci);if(ci===0){del=false;ri=(ri+1)%roles.length;setTimeout(type,300);return}}
-  setTimeout(type,del?55:90);}
-type();
-
-// PROJECT FILTER
-document.querySelectorAll('.fb').forEach(b=>{
-  b.addEventListener('click',function(){
-    document.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));
-    this.classList.add('active');
-    const f=this.dataset.f;
-    document.querySelectorAll('.pc').forEach(c=>{c.style.display=f==='all'||c.dataset.c===f?'':'none'});
-  });
-});
-
-// NAV ACTIVE
-const secs=document.querySelectorAll('section[id]');
-const nls=document.querySelectorAll('.nl a');
-window.addEventListener('scroll',()=>{
-  let cur='';
-  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-200)cur=s.id});
-  nls.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--gold)':''});
-});
-</script>
+<script src="main.js"></script>
 </body>
 </html>
