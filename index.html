@@ -214,14 +214,10 @@
   </div>
   <div class="pg" id="pg">
 
-    <!-- AI & ML -->
     <article class="pc r" data-c="ai">
-      <div class="pimg pdiag" role="img" aria-label="Architecture: browser to Next.js app to FastAPI speech service">
-        <span class="node">Browser</span><i>→</i><span class="node">Next.js app</span><i>→</i><span class="node hot">FastAPI · Ethio-ASR</span>
-      </div>
-      <span class="plb">Speech AI</span>
+      <div class="pimg"><img src="images/habeshavoice.webp" width="960" height="600" loading="lazy" alt="HabeshaVoice Studio: dark workspace with a record button, language picker and transcript panel"></div>
       <div class="pbd">
-        <div class="pn">2026 · FLAGSHIP</div>
+        <div class="pn">2026 · FLAGSHIP · SPEECH AI</div>
         <h3>HabeshaVoice Studio</h3>
         <p>A private speech-to-text workspace for Tigrinya and Amharic. Record or upload audio, review the transcript against the recording, edit, and export. The web app runs on a standard host while GPU inference sits in a separate FastAPI service, so its credential never reaches the browser.</p>
         <div class="tgs"><span class="tg">Next.js</span><span class="tg">TypeScript</span><span class="tg">FastAPI</span><span class="tg">Python</span><span class="tg">Vercel Blob</span></div>
@@ -232,13 +228,24 @@
       </div>
     </article>
 
-    <article class="pc r" data-c="ai">
-      <div class="pimg pdiag" role="img" aria-label="Pipeline: ingest, panel, features, bake-off, report">
-        <span class="node">ingest</span><i>→</i><span class="node">panel</span><i>→</i><span class="node">features</span><i>→</i><span class="node hot">bake-off</span><i>→</i><span class="node">report</span>
-      </div>
-      <span class="plb">ML research</span>
+    <article class="pc r" data-c="web">
+      <div class="pimg"><img src="images/selam.webp" width="960" height="600" loading="lazy" alt="Selam: 3D church courtyard with the title "A journey into the sacred""></div>
       <div class="pbd">
-        <div class="pn">2026 · RESEARCH</div>
+        <div class="pn">2026 · CREATIVE · 3D WEB</div>
+        <h3>Selam — A Sacred Journey</h3>
+        <p>An immersive 3D walk from a sunlit courtyard into an Eritrean Orthodox-inspired church, with a guided tour, golden-hour and candlelight lighting, ambient sound and a reduced-motion option. No build step.</p>
+        <div class="tgs"><span class="tg">Three.js</span><span class="tg">JavaScript</span><span class="tg">Web Audio</span><span class="tg">Vercel</span></div>
+        <div class="plnks">
+          <a href="https://eritrea-sacred-journey.vercel.app" target="_blank" rel="noopener noreferrer" class="pla">Live Demo ↗</a>
+          <a href="https://github.com/naibwedi/eritrea-sacred-journey" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pb_ c"></div>
+      <div class="pbd">
+        <div class="pn">2026 · RESEARCH · INTERPRETABLE ML</div>
         <h3>Tsetlin Market Lab</h3>
         <p>Can a Tsetlin Machine predict which bookmaker moves its price next, and explain why in human-readable rules? Time-ordered, leakage-safe splits, a bake-off against seven baselines including XGBoost and LightGBM, and GitHub Actions collecting data on a schedule. Research, not betting advice.</p>
         <div class="tgs"><span class="tg">Python</span><span class="tg">Tsetlin Machine</span><span class="tg">XGBoost</span><span class="tg">LightGBM</span><span class="tg">GitHub Actions</span></div>
@@ -248,11 +255,57 @@
       </div>
     </article>
 
-    <article class="pc r" data-c="ai">
-      <div class="pimg pdiag" role="img" aria-label="Flow: Tsetlin signals to broker interface to paper trades with the rule that produced them">
-        <span class="node">TM signals</span><i>→</i><span class="node hot">broker interface</span><i>→</i><span class="node">paper trades + rules</span>
+    <article class="pc r" data-c="apps">
+      <div class="pb_ t"></div>
+      <div class="pbd">
+        <div class="pn">2025 · MOBILE + AI</div>
+        <h3>CampusCart</h3>
+        <p>A student marketplace app for buying and selling second-hand items. Every uploaded image passes a serverless moderation pipeline: a Firebase Cloud Function runs Google Cloud Vision, flagged images are deleted, and the seller is notified.</p>
+        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span><span class="tg">Cloud Vision</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/Campus-Cart-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
       </div>
-      <span class="plb">ML engine</span>
+    </article>
+
+    <article class="pc r" data-c="apps">
+      <div class="pb_ g"></div>
+      <div class="pbd">
+        <div class="pn">2024 · FULL-STACK .NET</div>
+        <h3>Logi-Track</h3>
+        <p>A logistics platform with four roles and a full trip lifecycle: request, price, assign, deliver. Status, price and driver assignment update live over SignalR. ASP.NET Identity, EF Core migrations, Swagger docs and a multi-stage Docker build.</p>
+        <div class="tgs"><span class="tg g">ASP.NET Core</span><span class="tg g">SignalR</span><span class="tg g">EF Core</span><span class="tg g">PostgreSQL</span><span class="tg g">Docker</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/Logi-Track" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="apps">
+      <div class="pimg pimg-contain"><img src="images/flowlingo.webp" width="960" height="600" loading="lazy" alt="FlowLingo keyboard with a translation preview strip above the keys"></div>
+      <div class="pbd">
+        <div class="pn">2026 · ANDROID</div>
+        <h3>FlowLingo</h3>
+        <p>An Android translation keyboard. A native Kotlin input-method service handles typing and shows a live translated preview, while Flutter powers onboarding, settings and privacy screens. Typed text is never stored.</p>
+        <div class="tgs"><span class="tg">Kotlin</span><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">Android IME</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/FlowLingo" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="apps">
+      <div class="pb_ g"></div>
+      <div class="pbd">
+        <div class="pn">2025–26 · RED ROCK · EMPLOYER PROJECT</div>
+        <h3>ADS Parameter Tool</h3>
+        <p>A desktop tool for industrial automation that reads live PLC symbols over Beckhoff TwinCAT ADS. Symbol-tree navigation, parameter comparison, change highlighting and inline editing. Source is private.</p>
+        <div class="tgs"><span class="tg g">C# / .NET 8</span><span class="tg g">Avalonia</span><span class="tg g">ReactiveUI</span><span class="tg g">TwinCAT ADS</span></div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pb_ c"></div>
       <div class="pbd">
         <div class="pn">2026 · INTERPRETABLE ML</div>
         <h3>Tsetlin Trader</h3>
@@ -264,49 +317,41 @@
       </div>
     </article>
 
-    <article class="pc r" data-c="ai">
-      <div class="pimg pdiag" role="img" aria-label="Flow: point-in-time features to purged walk-forward selector to weekly choice with costs">
-        <span class="node">point-in-time features</span><i>→</i><span class="node hot">purged walk-forward</span><i>→</i><span class="node">weekly choice + costs</span>
-      </div>
-      <span class="plb">ML research</span>
+    <article class="pc r" data-c="security">
+      <div class="pimg"><img src="images/xss.webp" width="960" height="600" loading="lazy" alt="Vulnerable blog app whose post list renders an injected script instead of text"></div>
       <div class="pbd">
-        <div class="pn">2026 · RESEARCH</div>
-        <h3>LogicAlpha</h3>
-        <p>A leakage-aware research platform for selecting between strategies with Boolean features and an optional Tsetlin Machine. Train-only thresholds, purged walk-forward validation, next-session execution and transaction costs. Research software, not investment advice.</p>
-        <div class="tgs"><span class="tg">Python</span><span class="tg">Walk-forward validation</span><span class="tg">Boolean features</span></div>
+        <div class="pn">COURSEWORK · SECURITY</div>
+        <h3>Cross-Site Scripting Demo</h3>
+        <p>A deliberately vulnerable Flask app plus an attacker server that demonstrates an XSS attack end to end, including credential theft through a fake login page. Containerised with Docker Compose so it runs in isolation.</p>
+        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">XSS</span><span class="tg g">SQLite</span><span class="tg g">Docker Compose</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/logic-alpha-tm" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/Cross-Site-Scripting" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </article>
 
-    <article class="pc r" data-c="ai">
-      <div class="pimg pdiag" role="img" aria-label="Flow: rules and ML models to one calibrated verdict">
-        <span class="row"><span class="node">rules</span><span class="node">ML models</span></span><i>→</i><span class="node hot">one calibrated verdict</span>
-      </div>
-      <span class="plb">Decision engine</span>
+    <article class="pc r" data-c="security">
+      <div class="pb_ g"></div>
       <div class="pbd">
-        <div class="pn">AI · DECISION ENGINES</div>
-        <h3>Decidon</h3>
-        <p>Fuses multiple decision engines, such as rules and ML models, into one calibrated, replayable verdict.</p>
-        <div class="tgs"><span class="tg">Python</span><span class="tg">Calibration</span></div>
+        <div class="pn">COURSEWORK · SECURITY</div>
+        <h3>User Authentication</h3>
+        <p>An authentication system with bcrypt-hashed credentials, brute-force protection through rate limiting and timeouts, TOTP two-factor authentication compatible with authenticator apps, and an OAuth2 authorization-code flow.</p>
+        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">bcrypt</span><span class="tg g">TOTP 2FA</span><span class="tg g">OAuth2</span><span class="tg g">Docker</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/decidon" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/User-Authentication" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </article>
 
-    <!-- WEB -->
-    <article class="pc r" data-c="web">
-      <div class="pimg"><img src="images/selam.webp" width="960" height="600" loading="lazy" alt="Selam: 3D church courtyard with the title 'A journey into the sacred'"></div>
+    <article class="pc r" data-c="apps">
+      <div class="pimg"><img src="images/student-assessment.webp" width="960" height="600" loading="lazy" alt="Student Assessment App: home screen and student list on two phone screens"></div>
       <div class="pbd">
-        <div class="pn">2026 · CREATIVE</div>
-        <h3>Selam — A Sacred Journey</h3>
-        <p>An immersive 3D walk from a sunlit courtyard into an Eritrean Orthodox-inspired church, with a guided tour, golden-hour and candlelight lighting, ambient sound and a reduced-motion option. No build step.</p>
-        <div class="tgs"><span class="tg">Three.js</span><span class="tg">JavaScript</span><span class="tg">Web Audio</span><span class="tg">Vercel</span></div>
+        <div class="pn">2025 · MOBILE</div>
+        <h3>Student Assessment App</h3>
+        <p>A React Native app for teachers to manage students, courses and assessments, with full create, edit and delete flows and a Firebase backend. About 97% TypeScript.</p>
+        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span></div>
         <div class="plnks">
-          <a href="https://eritrea-sacred-journey.vercel.app" target="_blank" rel="noopener noreferrer" class="pla">Live Demo ↗</a>
-          <a href="https://github.com/naibwedi/eritrea-sacred-journey" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/Student-Assesment-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </article>
@@ -325,127 +370,15 @@
       </div>
     </article>
 
-    <!-- APPS & BACKEND -->
-    <article class="pc r" data-c="apps">
-      <div class="pimg pdiag" role="img" aria-label="Flow: upload, Cloud Function, Cloud Vision, approve or delete">
-        <span class="node">upload</span><i>→</i><span class="node">Cloud Function</span><i>→</i><span class="node hot">Cloud Vision</span><i>→</i><span class="node">approve / delete</span>
-      </div>
-      <span class="plb">React Native · Firebase</span>
-      <div class="pbd">
-        <div class="pn">2025 · MOBILE + AI</div>
-        <h3>CampusCart</h3>
-        <p>A student marketplace app for buying and selling second-hand items. Every uploaded image passes a serverless moderation pipeline: Google Cloud Vision flags inappropriate content, the image is deleted, and the seller is notified.</p>
-        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span><span class="tg">Cloud Vision</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/Campus-Cart-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pc r" data-c="apps">
-      <div class="pimg pdiag" role="img" aria-label="Trip lifecycle: request, price, assign, deliver, with live updates over SignalR">
-        <span class="node">request</span><i>→</i><span class="node">price</span><i>→</i><span class="node">assign</span><i>→</i><span class="node hot">deliver</span>
-      </div>
-      <span class="plb">C# · ASP.NET Core</span>
-      <div class="pbd">
-        <div class="pn">2024 · FULL-STACK</div>
-        <h3>Logi-Track</h3>
-        <p>A logistics platform with four roles and a full trip lifecycle. Status, price and driver assignment update live over SignalR. ASP.NET Identity, EF Core migrations, Swagger docs and a multi-stage Docker build.</p>
-        <div class="tgs"><span class="tg g">ASP.NET Core</span><span class="tg g">SignalR</span><span class="tg g">EF Core</span><span class="tg g">PostgreSQL</span><span class="tg g">Docker</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/Logi-Track" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pc r" data-c="apps">
-      <div class="pimg pimg-contain"><img src="images/flowlingo.webp" width="434" height="402" loading="lazy" alt="FlowLingo keyboard with a translation preview strip above the keys"></div>
-      <div class="pbd">
-        <div class="pn">2026 · ANDROID</div>
-        <h3>FlowLingo</h3>
-        <p>An Android translation keyboard. A native Kotlin input-method service handles typing and shows a live translated preview, while Flutter powers onboarding, settings and privacy screens. Typed text is never stored.</p>
-        <div class="tgs"><span class="tg">Kotlin</span><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">Android IME</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/FlowLingo" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pc r" data-c="apps">
-      <div class="pimg pdiag" role="img" aria-label="Flow: PLC symbols over ADS to a tree view with compare and inline edit">
-        <span class="node">PLC symbols</span><i>→</i><span class="node hot">ADS</span><i>→</i><span class="node">tree · compare · edit</span>
-      </div>
-      <span class="plb">Employer project</span>
-      <div class="pbd">
-        <div class="pn">2025–26 · RED ROCK</div>
-        <h3>ADS Parameter Tool</h3>
-        <p>A desktop tool for industrial automation that reads live PLC symbols over Beckhoff TwinCAT ADS. Symbol-tree navigation, parameter comparison, change highlighting and inline editing. Source is private.</p>
-        <div class="tgs"><span class="tg g">C# / .NET 8</span><span class="tg g">Avalonia</span><span class="tg g">ReactiveUI</span><span class="tg g">TwinCAT ADS</span></div>
-      </div>
-    </article>
-
-    <!-- SECURITY -->
-    <article class="pc r" data-c="security">
-      <div class="pimg pdiag" role="img" aria-label="Attack flow: injected script in the vulnerable app sends credentials to the attacker server">
-        <span class="node">injected script</span><i>→</i><span class="node hot">vulnerable app</span><i>→</i><span class="node">attacker server</span>
-      </div>
-      <span class="plb">Security</span>
-      <div class="pbd">
-        <div class="pn">COURSEWORK · XSS</div>
-        <h3>Cross-Site Scripting Demo</h3>
-        <p>A deliberately vulnerable Flask app plus an attacker server that demonstrates an XSS attack end to end, including credential theft through a fake login page. Containerised with Docker Compose so it runs in isolation.</p>
-        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">XSS</span><span class="tg g">SQLite</span><span class="tg g">Docker Compose</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/Cross-Site-Scripting" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pc r" data-c="security">
-      <div class="pimg pdiag" role="img" aria-label="Layers: bcrypt hashing, rate limiting, TOTP two-factor, OAuth2">
-        <span class="node">bcrypt</span><i>→</i><span class="node">rate limit</span><i>→</i><span class="node hot">TOTP 2FA</span><i>→</i><span class="node">OAuth2</span>
-      </div>
-      <span class="plb">Security</span>
-      <div class="pbd">
-        <div class="pn">COURSEWORK · AUTH</div>
-        <h3>User Authentication</h3>
-        <p>An authentication system with bcrypt-hashed credentials, brute-force protection through rate limiting and timeouts, TOTP two-factor authentication compatible with authenticator apps, and an OAuth2 authorization-code flow.</p>
-        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">bcrypt</span><span class="tg g">TOTP 2FA</span><span class="tg g">OAuth2</span><span class="tg g">Docker</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/User-Authentication" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- SYSTEMS -->
     <article class="pc r" data-c="systems">
-      <div class="pimg pdiag" role="img" aria-label="Kernel stack: bootloader, interrupts, memory management, scheduling">
-        <span class="node">bootloader</span><i>→</i><span class="node">interrupts</span><i>→</i><span class="node hot">memory</span><i>→</i><span class="node">scheduling</span>
-      </div>
-      <span class="plb">C · x86</span>
+      <div class="pb_ o"></div>
       <div class="pbd">
-        <div class="pn">2025 · UIA IKT218</div>
+        <div class="pn">2025 · UIA IKT218 · SYSTEMS</div>
         <h3>Operating System from Scratch</h3>
         <p>A bootable x86 kernel built as university coursework: bootloader hand-off, interrupt handling, memory management and basic process scheduling.</p>
         <div class="tgs"><span class="tg">C</span><span class="tg">x86</span><span class="tg">OS development</span><span class="tg">Memory management</span></div>
         <div class="plnks">
           <a href="https://github.com/naibwedi/2025-ikt218-osdev" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="pc r" data-c="systems">
-      <div class="pimg pdiag" role="img" aria-label="Flow: infix expression to stack to postfix to result">
-        <span class="node">infix</span><i>→</i><span class="node hot">stack</span><i>→</i><span class="node">postfix</span><i>→</i><span class="node">result</span>
-      </div>
-      <span class="plb">C++</span>
-      <div class="pbd">
-        <div class="pn">2024 · ALGORITHMS</div>
-        <h3>Infix → Postfix Evaluator</h3>
-        <p>Converts infix expressions to postfix with a stack-based algorithm and evaluates them. Supports sin, cos, log, π, exponentiation and variables.</p>
-        <div class="tgs"><span class="tg">C++</span><span class="tg">Stacks</span><span class="tg">Parsing</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/infix-to-postfix-converter" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
     </article>
