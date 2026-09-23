@@ -112,7 +112,7 @@ if (counters.length) {
 // TYPED
 const tel = document.getElementById('typed');
 if (tel) {
-  const roles = ['Full-Stack Developer', 'Data Engineer', 'UI/UX Designer', 'C# / .NET Specialist', 'React Developer', 'Mobile App Builder'];
+  const roles = ['Full-Stack Developer', 'Python & FastAPI Backend Engineer', 'C# / .NET Engineer', 'Speech AI Builder', 'Interpretable ML Researcher', 'Cybersecurity MSc Student'];
   if (REDUCED) {
     tel.textContent = roles[0];
   } else {
@@ -130,8 +130,9 @@ if (tel) {
 // PROJECT FILTER
 document.querySelectorAll('.fb').forEach(b => {
   b.addEventListener('click', function () {
-    document.querySelectorAll('.fb').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.fb').forEach(x => { x.classList.remove('active'); x.setAttribute('aria-pressed', 'false'); });
     this.classList.add('active');
+    this.setAttribute('aria-pressed', 'true');
     const f = this.dataset.f;
     document.querySelectorAll('.pc').forEach(c => { c.style.display = f === 'all' || c.dataset.c === f ? '' : 'none'; });
   });

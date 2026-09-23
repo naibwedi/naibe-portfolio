@@ -3,26 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naibe Mehari Tekle — Software Engineer</title>
-<meta name="description" content="Naibe Mehari Tekle — Software Engineer and Data Engineering student. Full-stack developer specializing in C#/.NET, React, and industrial software. Based in Norway.">
-<meta property="og:title" content="Naibe Mehari Tekle — Software Engineer">
-<meta property="og:description" content="Full-stack developer specializing in C#/.NET, React, and industrial software. Based in Norway.">
+<title>Naibe Mehari Tekle — Full-Stack Developer &amp; Cybersecurity MSc Student</title>
+<meta name="description" content="Naibe Mehari Tekle — full-stack developer at Anzyz Technologies (Python, FastAPI, .NET, React) and Master's student in cybersecurity. Speech AI for Tigrinya &amp; Amharic, interpretable ML, industrial software. Based in Norway.">
+<meta property="og:title" content="Naibe Mehari Tekle — Full-Stack Developer &amp; Cybersecurity MSc Student">
+<meta property="og:description" content="Python/FastAPI and .NET backends, speech AI for Tigrinya &amp; Amharic, interpretable ML and security. Based in Norway.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://naibtech.dev/">
 <meta property="og:image" content="https://naibtech.dev/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://naibtech.dev/og-image.png">
 <link rel="canonical" href="https://naibtech.dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231A1208'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23C9963A'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Naibe Mehari Tekle",
+  "url": "https://naibtech.dev/",
+  "jobTitle": "Full-Stack Developer",
+  "worksFor": { "@type": "Organization", "name": "Anzyz Technologies" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Agder" },
+  "knowsLanguage": ["nb", "en", "ti", "ar"],
+  "address": { "@type": "PostalAddress", "addressCountry": "NO" },
+  "sameAs": ["https://github.com/naibwedi", "https://www.linkedin.com/in/naib-mehari-95690114a/"]
+}
+</script>
 </head>
 <body>
 
-<canvas id="cvs"></canvas>
-<div class="gbg"></div>
-<div class="cd" id="cdot"></div>
-<div class="cr" id="cring"></div>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="cvs" aria-hidden="true"></canvas>
+<div class="gbg" aria-hidden="true"></div>
+<div class="cd" id="cdot" aria-hidden="true"></div>
+<div class="cr" id="cring" aria-hidden="true"></div>
 
 <!-- mobile nav overlay -->
 <div class="mnav" id="mnav" aria-hidden="true">
@@ -34,7 +51,7 @@
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
-<nav>
+<nav aria-label="Primary">
   <div class="logo">N<span>.</span>Mehari</div>
   <ul class="nl">
     <li><a href="#about">About</a></li>
@@ -50,6 +67,8 @@
 </nav>
 
 <button class="stt" id="stt" aria-label="Scroll to top">↑</button>
+
+<main id="main">
 
 <!-- HERO -->
 <section id="hero">
@@ -67,13 +86,14 @@
     </g>
   </svg>
   <div class="hc">
-    <div class="hl">Software Engineer &amp; Data Engineering Student</div>
+    <div class="hl">Full-Stack Developer &middot; MSc Cybersecurity</div>
     <h1 class="hn">Naibe<br><span class="gld">Mehari</span><br><span class="str">Tekle</span></h1>
-    <p class="hr">// <span id="typed"></span></p>
+    <p class="hr">// <span id="typed">Full-Stack Developer</span></p>
+    <p class="hb">I build backend systems, NLP and speech tooling, and interpretable ML. Full-stack developer at Anzyz Technologies, now studying for a Master's in Cybersecurity.</p>
     <div class="htags">
-      <span class="htag">C# / .NET</span><span class="htag">React.js</span>
-      <span class="htag">TypeScript</span><span class="htag">Python</span>
-      <span class="htag">Docker</span><span class="htag">Figma</span>
+      <span class="htag">Python / FastAPI</span><span class="htag">C# / .NET</span>
+      <span class="htag">TypeScript</span><span class="htag">React</span>
+      <span class="htag">MongoDB</span><span class="htag">Docker</span>
     </div>
     <div class="hcta">
       <a href="#projects" class="bp">View Projects →</a>
@@ -91,12 +111,13 @@
   <h2 class="st r">Who I <span class="a">Am</span></h2>
   <div class="ag">
     <div class="at r lft">
-      <div class="avatar">NMT</div>
-      <p>I'm a software developer and Computer Engineering student who builds across the full stack — desktop, web, and mobile. I care about both how things work and how they feel to use. My background covers software development, automation, and UI/UX design — and I enjoy working close to both the code and the people it's built for.</p>
+      <div class="avatar" aria-hidden="true">NMT</div>
+      <p>I'm a full-stack developer at <strong>Anzyz Technologies</strong>, where I build Python and FastAPI backends for document ingestion, processing and NLP. Before that I built an industrial PLC tool in C# / .NET at Red Rock. I finished my B.Eng. in Computer Engineering at the University of Agder in June 2026 and I'm now studying for a Master's in Cybersecurity.</p>
+      <p>Outside work I build things for my own community and curiosity: a speech-to-text studio for Tigrinya and Amharic, interpretable-ML research, and an immersive 3D tour of Eritrean church architecture.</p>
       <div class="srow">
-        <div class="stat"><div class="sn" data-target="29">0</div><div class="slab">GitHub Repos</div></div>
-        <div class="stat"><div class="sn" data-target="4">0</div><div class="slab">Languages Spoken</div></div>
-        <div class="stat"><div class="sn" data-target="11">0</div><div class="slab">Projects Built</div></div>
+        <div class="stat"><div class="sn" data-target="2">0</div><div class="slab">Professional roles</div></div>
+        <div class="stat"><div class="sn" data-target="3">0</div><div class="slab">Live products</div></div>
+        <div class="stat"><div class="sn" data-target="4">0</div><div class="slab">Languages spoken</div></div>
       </div>
       <div class="lr">
         <div class="lp">🇳🇴 Norsk</div>
@@ -107,11 +128,11 @@
     </div>
     <div class="r rgt">
       <div class="af">
-        <div class="fc"><div class="fi">🎓</div><div><h4>Education</h4><p>Ingeniørfag – Data (Bachelor), UiA (2023–2026)</p></div></div>
-        <div class="fc"><div class="fi">💼</div><div><h4>Current Role</h4><p>Software Developer (deltid) — Red Rock</p></div></div>
-        <div class="fc"><div class="fi">⚙️</div><div><h4>Focus Areas</h4><p>Full-stack, industrial software, UI/UX, data engineering</p></div></div>
+        <div class="fc"><div class="fi">💼</div><div><h4>Current role</h4><p>Full-Stack Developer — Anzyz Technologies</p></div></div>
+        <div class="fc"><div class="fi">🎓</div><div><h4>Education</h4><p>Master's in Cybersecurity (in progress) · B.Eng. Computer Engineering, UiA (2023–2026)</p></div></div>
+        <div class="fc"><div class="fi">⚙️</div><div><h4>Focus areas</h4><p>Backend &amp; NLP, speech AI, interpretable ML, security</p></div></div>
         <div class="fc"><div class="fi">🌍</div><div><h4>Languages</h4><p>Norwegian, English, Tigrigna, Arabic</p></div></div>
-        <div class="fc"><div class="fi">🚗</div><div><h4>Driving License</h4><p>Klasse B</p></div></div>
+        <div class="fc"><div class="fi">🚗</div><div><h4>Driving licence</h4><p>Class B</p></div></div>
       </div>
     </div>
   </div>
@@ -124,12 +145,13 @@
   <div class="sl">02 / Skills</div>
   <h2 class="st r">What I <span class="a">Build With</span></h2>
   <div class="sg">
-    <div class="sc r"><div class="si">⚙️</div><h3>OOP Languages</h3><div class="tgs"><span class="tg">C#</span><span class="tg">Python</span><span class="tg">C++</span><span class="tg">C</span></div></div>
-    <div class="sc r"><div class="si">🖼️</div><h3>Frontend</h3><div class="tgs"><span class="tg">React.js</span><span class="tg">TypeScript</span><span class="tg">JavaScript</span><span class="tg">HTML/CSS</span><span class="tg">Sass</span><span class="tg">Bootstrap</span></div></div>
-    <div class="sc r"><div class="si">🗄️</div><h3>Backend &amp; Databases</h3><div class="tgs"><span class="tg">ASP.NET / .NET 8</span><span class="tg">Flask</span><span class="tg">SQL/MySQL</span><span class="tg">Entity Framework</span><span class="tg">Firebase</span><span class="tg">SQLite</span></div></div>
-    <div class="sc r"><div class="si">🐳</div><h3>DevOps &amp; CI/CD</h3><div class="tgs"><span class="tg g">Docker</span><span class="tg g">GitLab CI/CD</span><span class="tg g">Gitea Actions</span><span class="tg g">Git</span><span class="tg g">Bitbucket</span></div></div>
-    <div class="sc r"><div class="si">🤖</div><h3>Industrial / Desktop</h3><div class="tgs"><span class="tg">Avalonia UI</span><span class="tg">ReactiveUI</span><span class="tg">MVVM</span><span class="tg">TwinCAT ADS</span><span class="tg">Beckhoff PLC</span></div></div>
-    <div class="sc r"><div class="si">🎨</div><h3>UI/UX &amp; Mobile</h3><div class="tgs"><span class="tg">Figma</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Google UX Cert</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">⚙️</div><h3>Languages</h3><div class="tgs"><span class="tg">Python</span><span class="tg">C#</span><span class="tg">TypeScript</span><span class="tg">JavaScript</span><span class="tg">C++</span><span class="tg">C</span><span class="tg">Dart</span><span class="tg">Kotlin</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🗄️</div><h3>Backend &amp; Data</h3><div class="tgs"><span class="tg">FastAPI</span><span class="tg">ASP.NET Core</span><span class="tg">Celery</span><span class="tg">MongoDB</span><span class="tg">Elasticsearch</span><span class="tg">PostgreSQL</span><span class="tg">SQLite</span><span class="tg">Entity Framework</span><span class="tg">SignalR</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🖼️</div><h3>Frontend &amp; Mobile</h3><div class="tgs"><span class="tg">React</span><span class="tg">Next.js</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Flutter</span><span class="tg">Three.js</span><span class="tg">HTML/CSS</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🧠</div><h3>AI &amp; Machine Learning</h3><div class="tgs"><span class="tg">NLP</span><span class="tg">Speech recognition (ASR)</span><span class="tg">Tsetlin Machines</span><span class="tg">XGBoost / LightGBM</span><span class="tg">Cloud Vision</span><span class="tg">Leakage-safe validation</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🛡️</div><h3>Security <small>(MSc in progress)</small></h3><div class="tgs"><span class="tg g">XSS exploitation</span><span class="tg g">bcrypt</span><span class="tg g">TOTP 2FA</span><span class="tg g">OAuth2</span><span class="tg g">Brute-force protection</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🤖</div><h3>Industrial &amp; Desktop</h3><div class="tgs"><span class="tg">Avalonia UI</span><span class="tg">ReactiveUI</span><span class="tg">MVVM</span><span class="tg">TwinCAT ADS</span><span class="tg">Beckhoff PLC</span></div></div>
+    <div class="sc r"><div class="si" aria-hidden="true">🐳</div><h3>DevOps &amp; Tooling</h3><div class="tgs"><span class="tg g">Docker</span><span class="tg g">GitHub Actions</span><span class="tg g">GitLab CI/CD</span><span class="tg g">Vercel</span><span class="tg g">Git</span></div></div>
   </div>
 </section>
 
@@ -137,15 +159,42 @@
 <section id="experience">
   <div class="sl">03 / Experience</div>
   <h2 class="st r">Where I've <span class="a">Worked</span></h2>
+
   <div class="ei r">
-    <div class="edate">Aug 2025<br>Ongoing</div>
+    <div class="edate">Jan 2026<br>Present</div>
     <div class="ec">
       <div class="edot"></div>
-      <h3>Software Developer (Deltid)</h3>
-      <div class="eco">Red Rock</div>
-      <p>Developing an Avalonia-based ADS Parameter Tool using C#/.NET 8 and ReactiveUI (MVVM). Integrates with Beckhoff TwinCAT ADS to read live PLC symbols and visualize industrial data in real-time. Full MVVM architecture with Docker deployment.</p>
+      <h3>Full-Stack Developer</h3>
+      <div class="eco">Anzyz Technologies · Grimstad, Norway</div>
+      <p>Develop and maintain full-stack solutions and backend services with Python, FastAPI, MongoDB, Celery and Elasticsearch. Work on document ingestion, processing and analysis, including NLP features that identify and visualise relationships between concepts and themes. Also contribute integrations, testing, debugging, pull requests and production-ready improvements.</p>
       <div class="tgs" style="margin-top:.8rem">
-        <span class="tg g">C# / .NET 8</span><span class="tg g">Avalonia</span><span class="tg g">ReactiveUI</span><span class="tg g">TwinCAT ADS</span><span class="tg g">Docker</span>
+        <span class="tg g">Python</span><span class="tg g">FastAPI</span><span class="tg g">MongoDB</span><span class="tg g">Elasticsearch</span><span class="tg g">Celery</span><span class="tg g">NLP</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ei r">
+    <div class="edate">Aug 2025<br>Jun 2026</div>
+    <div class="ec">
+      <div class="edot"></div>
+      <h3>Software Engineer</h3>
+      <div class="eco">Red Rock · Kristiansand, Norway</div>
+      <p>Contributed to an ADS parameter tool for industrial automation systems, built with C#, .NET 8, Avalonia and ReactiveUI and integrated with Beckhoff TwinCAT over ADS. Worked on symbol-tree navigation, parameter comparison, change highlighting, inline editing and JSON-based workflows.</p>
+      <div class="tgs" style="margin-top:.8rem">
+        <span class="tg g">C# / .NET 8</span><span class="tg g">Avalonia</span><span class="tg g">ReactiveUI</span><span class="tg g">TwinCAT ADS</span><span class="tg g">PLC</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ei r">
+    <div class="edate">Aug 2021<br>Jun 2023</div>
+    <div class="ec">
+      <div class="edot"></div>
+      <h3>ICT Service Technician Apprentice</h3>
+      <div class="eco">Vågsbygd videregående skole · Kristiansand, Norway</div>
+      <p>Gave technical support to students and staff, and installed, configured and maintained computers, software, networks and other IT equipment. Troubleshot hardware, software, account, access and network issues. Completed the apprenticeship, leading to the trade certificate (fagbrev) in ICT service.</p>
+      <div class="tgs" style="margin-top:.8rem">
+        <span class="tg g">Technical support</span><span class="tg g">Troubleshooting</span><span class="tg g">Networks</span>
       </div>
     </div>
   </div>
@@ -155,172 +204,254 @@
 <section id="projects">
   <div class="sl">04 / Projects</div>
   <h2 class="st r">What I've <span class="a">Built</span></h2>
-  <div class="pf r">
-    <button class="fb active" data-f="all">All</button>
-    <button class="fb" data-f="web">Web</button>
-    <button class="fb" data-f="csharp">C# / .NET</button>
-    <button class="fb" data-f="mobile">Mobile</button>
-    <button class="fb" data-f="systems">Systems</button>
-    <button class="fb" data-f="algo">Algorithms</button>
+  <div class="pf r" role="group" aria-label="Filter projects">
+    <button class="fb active" data-f="all" aria-pressed="true">All</button>
+    <button class="fb" data-f="ai" aria-pressed="false">AI &amp; ML</button>
+    <button class="fb" data-f="web" aria-pressed="false">Web</button>
+    <button class="fb" data-f="apps" aria-pressed="false">Apps &amp; Backend</button>
+    <button class="fb" data-f="security" aria-pressed="false">Security</button>
+    <button class="fb" data-f="systems" aria-pressed="false">Systems</button>
   </div>
   <div class="pg" id="pg">
 
-    <div class="pc r" data-c="web">
-      <div class="pb_ c"></div>
-      <span class="plb">HTML · CSS · JS</span>
+    <!-- AI & ML -->
+    <article class="pc r" data-c="ai">
+      <div class="pimg pdiag" role="img" aria-label="Architecture: browser to Next.js app to FastAPI speech service">
+        <span class="node">Browser</span><i>→</i><span class="node">Next.js app</span><i>→</i><span class="node hot">FastAPI · Ethio-ASR</span>
+      </div>
+      <span class="plb">Speech AI</span>
       <div class="pbd">
-        <div class="pn">PROJ 01 · 2024 · ⭐1</div>
+        <div class="pn">2026 · FLAGSHIP</div>
+        <h3>HabeshaVoice Studio</h3>
+        <p>A private speech-to-text workspace for Tigrinya and Amharic. Record or upload audio, review the transcript against the recording, edit, and export. The web app runs on a standard host while GPU inference sits in a separate FastAPI service, so its credential never reaches the browser.</p>
+        <div class="tgs"><span class="tg">Next.js</span><span class="tg">TypeScript</span><span class="tg">FastAPI</span><span class="tg">Python</span><span class="tg">Vercel Blob</span></div>
+        <div class="plnks">
+          <a href="https://habeshavoice-studio.vercel.app" target="_blank" rel="noopener noreferrer" class="pla">App (login) ↗</a>
+          <a href="https://github.com/naibwedi/habeshavoice-studio" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pimg pdiag" role="img" aria-label="Pipeline: ingest, panel, features, bake-off, report">
+        <span class="node">ingest</span><i>→</i><span class="node">panel</span><i>→</i><span class="node">features</span><i>→</i><span class="node hot">bake-off</span><i>→</i><span class="node">report</span>
+      </div>
+      <span class="plb">ML research</span>
+      <div class="pbd">
+        <div class="pn">2026 · RESEARCH</div>
+        <h3>Tsetlin Market Lab</h3>
+        <p>Can a Tsetlin Machine predict which bookmaker moves its price next, and explain why in human-readable rules? Time-ordered, leakage-safe splits, a bake-off against seven baselines including XGBoost and LightGBM, and GitHub Actions collecting data on a schedule. Research, not betting advice.</p>
+        <div class="tgs"><span class="tg">Python</span><span class="tg">Tsetlin Machine</span><span class="tg">XGBoost</span><span class="tg">LightGBM</span><span class="tg">GitHub Actions</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/tsetlin-market-lab" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pimg pdiag" role="img" aria-label="Flow: Tsetlin signals to broker interface to paper trades with the rule that produced them">
+        <span class="node">TM signals</span><i>→</i><span class="node hot">broker interface</span><i>→</i><span class="node">paper trades + rules</span>
+      </div>
+      <span class="plb">ML engine</span>
+      <div class="pbd">
+        <div class="pn">2026 · INTERPRETABLE ML</div>
+        <h3>Tsetlin Trader</h3>
+        <p>An interpretable trading engine: Tsetlin Machine rule-based signals executed as paper trades through a pluggable broker interface. Every decision ships with the human-readable logic that produced it.</p>
+        <div class="tgs"><span class="tg">Python</span><span class="tg">Tsetlin Machine</span><span class="tg">Paper trading</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/tsetlin-trader" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pimg pdiag" role="img" aria-label="Flow: point-in-time features to purged walk-forward selector to weekly choice with costs">
+        <span class="node">point-in-time features</span><i>→</i><span class="node hot">purged walk-forward</span><i>→</i><span class="node">weekly choice + costs</span>
+      </div>
+      <span class="plb">ML research</span>
+      <div class="pbd">
+        <div class="pn">2026 · RESEARCH</div>
+        <h3>LogicAlpha</h3>
+        <p>A leakage-aware research platform for selecting between strategies with Boolean features and an optional Tsetlin Machine. Train-only thresholds, purged walk-forward validation, next-session execution and transaction costs. Research software, not investment advice.</p>
+        <div class="tgs"><span class="tg">Python</span><span class="tg">Walk-forward validation</span><span class="tg">Boolean features</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/logic-alpha-tm" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="ai">
+      <div class="pimg pdiag" role="img" aria-label="Flow: rules and ML models to one calibrated verdict">
+        <span class="row"><span class="node">rules</span><span class="node">ML models</span></span><i>→</i><span class="node hot">one calibrated verdict</span>
+      </div>
+      <span class="plb">Decision engine</span>
+      <div class="pbd">
+        <div class="pn">AI · DECISION ENGINES</div>
+        <h3>Decidon</h3>
+        <p>Fuses multiple decision engines, such as rules and ML models, into one calibrated, replayable verdict.</p>
+        <div class="tgs"><span class="tg">Python</span><span class="tg">Calibration</span></div>
+        <div class="plnks">
+          <a href="https://github.com/naibwedi/decidon" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- WEB -->
+    <article class="pc r" data-c="web">
+      <div class="pimg"><img src="images/selam.webp" width="960" height="600" loading="lazy" alt="Selam: 3D church courtyard with the title 'A journey into the sacred'"></div>
+      <div class="pbd">
+        <div class="pn">2026 · CREATIVE</div>
+        <h3>Selam — A Sacred Journey</h3>
+        <p>An immersive 3D walk from a sunlit courtyard into an Eritrean Orthodox-inspired church, with a guided tour, golden-hour and candlelight lighting, ambient sound and a reduced-motion option. No build step.</p>
+        <div class="tgs"><span class="tg">Three.js</span><span class="tg">JavaScript</span><span class="tg">Web Audio</span><span class="tg">Vercel</span></div>
+        <div class="plnks">
+          <a href="https://eritrea-sacred-journey.vercel.app" target="_blank" rel="noopener noreferrer" class="pla">Live Demo ↗</a>
+          <a href="https://github.com/naibwedi/eritrea-sacred-journey" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pc r" data-c="web">
+      <div class="pimg"><img src="images/tigrigna.webp" width="960" height="600" loading="lazy" alt="Tigrigna Translator: Geez script input on the left, Latin output on the right"></div>
+      <div class="pbd">
+        <div class="pn">2024 · WEB TOOL</div>
         <h3>Tigrigna → Latin Translator</h3>
-        <p>A web tool translating Geez (ግዕዝ) alphabets and numbers to Latin. Live on Netlify. Built with vanilla HTML/CSS/JS.</p>
+        <p>Converts Geez (ግዕዝ) script and numerals to Latin, entirely in the browser. Vanilla HTML, CSS and JavaScript with no framework and no build step.</p>
         <div class="tgs"><span class="tg">HTML</span><span class="tg">CSS</span><span class="tg">JavaScript</span><span class="tg">Geez script</span></div>
         <div class="plnks">
           <a href="https://tigrigna-latin.netlify.app/" target="_blank" rel="noopener noreferrer" class="pla">Live Demo ↗</a>
           <a href="https://github.com/naibwedi/Tigrigna-to-latin-traslator" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="mobile">
-      <div class="pb_ t"></div>
-      <span class="plb">TypeScript · React Native</span>
+    <!-- APPS & BACKEND -->
+    <article class="pc r" data-c="apps">
+      <div class="pimg pdiag" role="img" aria-label="Flow: upload, Cloud Function, Cloud Vision, approve or delete">
+        <span class="node">upload</span><i>→</i><span class="node">Cloud Function</span><i>→</i><span class="node hot">Cloud Vision</span><i>→</i><span class="node">approve / delete</span>
+      </div>
+      <span class="plb">React Native · Firebase</span>
       <div class="pbd">
-        <div class="pn">PROJ 02 · 2025</div>
+        <div class="pn">2025 · MOBILE + AI</div>
         <h3>CampusCart</h3>
-        <p>Mobile marketplace for students to buy and sell second-hand items. Includes AI content moderation that automatically flags and removes inappropriate images before listing.</p>
-        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">AI / Computer Vision</span><span class="tg">REST API</span></div>
+        <p>A student marketplace app for buying and selling second-hand items. Every uploaded image passes a serverless moderation pipeline: Google Cloud Vision flags inappropriate content, the image is deleted, and the seller is notified.</p>
+        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span><span class="tg">Cloud Vision</span></div>
         <div class="plnks">
           <a href="https://github.com/naibwedi/Campus-Cart-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="csharp">
-      <div class="pb_ g"></div>
-      <span class="plb">C# · ASP.NET · Docker</span>
+    <article class="pc r" data-c="apps">
+      <div class="pimg pdiag" role="img" aria-label="Trip lifecycle: request, price, assign, deliver, with live updates over SignalR">
+        <span class="node">request</span><i>→</i><span class="node">price</span><i>→</i><span class="node">assign</span><i>→</i><span class="node hot">deliver</span>
+      </div>
+      <span class="plb">C# · ASP.NET Core</span>
       <div class="pbd">
-        <div class="pn">PROJ 03 · 2024 · 142 commits · ⭐1</div>
+        <div class="pn">2024 · FULL-STACK</div>
         <h3>Logi-Track</h3>
-        <p>Full-stack ASP.NET MVC logistics/transport management app. Real-time updates via SignalR Hubs, EF + SQLite, identity auth, Validators, Services layers, and Docker containerization.</p>
-        <div class="tgs"><span class="tg g">C#</span><span class="tg g">ASP.NET MVC</span><span class="tg g">SignalR</span><span class="tg g">Entity Framework</span><span class="tg g">Docker</span><span class="tg g">SQLite</span></div>
+        <p>A logistics platform with four roles and a full trip lifecycle. Status, price and driver assignment update live over SignalR. ASP.NET Identity, EF Core migrations, Swagger docs and a multi-stage Docker build.</p>
+        <div class="tgs"><span class="tg g">ASP.NET Core</span><span class="tg g">SignalR</span><span class="tg g">EF Core</span><span class="tg g">PostgreSQL</span><span class="tg g">Docker</span></div>
         <div class="plnks">
           <a href="https://github.com/naibwedi/Logi-Track" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="mobile">
-      <div class="pb_ b"></div>
-      <span class="plb">TypeScript · React Native</span>
+    <article class="pc r" data-c="apps">
+      <div class="pimg pimg-contain"><img src="images/flowlingo.webp" width="434" height="402" loading="lazy" alt="FlowLingo keyboard with a translation preview strip above the keys"></div>
       <div class="pbd">
-        <div class="pn">PROJ 04 · 2025 · ⭐1</div>
-        <h3>Student Assessment App</h3>
-        <p>React Native mobile app for educators to track student assessments. Full CRUD for students, courses, and grades. Firebase backend. 97% TypeScript. Built with Expo.</p>
-        <div class="tgs"><span class="tg">TypeScript</span><span class="tg">React Native</span><span class="tg">Expo</span><span class="tg">Firebase</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/Student-Assesment-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pc r" data-c="mobile">
-      <div class="pb_ c"></div>
-      <span class="plb">Dart · Flutter · Kotlin</span>
-      <div class="pbd">
-        <div class="pn">PROJ 05 · 2026</div>
+        <div class="pn">2026 · ANDROID</div>
         <h3>FlowLingo</h3>
-        <p>Android translation keyboard app. A native Kotlin IME layer handles keyboard input behavior while Flutter powers the settings, onboarding, and subscription flows.</p>
-        <div class="tgs"><span class="tg">Dart</span><span class="tg">Flutter</span><span class="tg">Kotlin</span><span class="tg">Android IME</span></div>
+        <p>An Android translation keyboard. A native Kotlin input-method service handles typing and shows a live translated preview, while Flutter powers onboarding, settings and privacy screens. Typed text is never stored.</p>
+        <div class="tgs"><span class="tg">Kotlin</span><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">Android IME</span></div>
         <div class="plnks">
           <a href="https://github.com/naibwedi/FlowLingo" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="csharp">
-      <div class="pb_ t"></div>
-      <span class="plb">C#</span>
+    <article class="pc r" data-c="apps">
+      <div class="pimg pdiag" role="img" aria-label="Flow: PLC symbols over ADS to a tree view with compare and inline edit">
+        <span class="node">PLC symbols</span><i>→</i><span class="node hot">ADS</span><i>→</i><span class="node">tree · compare · edit</span>
+      </div>
+      <span class="plb">Employer project</span>
       <div class="pbd">
-        <div class="pn">PROJ 06 · May 2023 · ⭐1</div>
-        <h3>Pritra Console App</h3>
-        <p>Transport management CLI application — part of a larger logistics suite. User-friendly command-line interface for managing transport operations and workflows.</p>
-        <div class="tgs"><span class="tg g">C#</span><span class="tg g">.NET</span><span class="tg g">CLI</span></div>
+        <div class="pn">2025–26 · RED ROCK</div>
+        <h3>ADS Parameter Tool</h3>
+        <p>A desktop tool for industrial automation that reads live PLC symbols over Beckhoff TwinCAT ADS. Symbol-tree navigation, parameter comparison, change highlighting and inline editing. Source is private.</p>
+        <div class="tgs"><span class="tg g">C# / .NET 8</span><span class="tg g">Avalonia</span><span class="tg g">ReactiveUI</span><span class="tg g">TwinCAT ADS</span></div>
+      </div>
+    </article>
+
+    <!-- SECURITY -->
+    <article class="pc r" data-c="security">
+      <div class="pimg pdiag" role="img" aria-label="Attack flow: injected script in the vulnerable app sends credentials to the attacker server">
+        <span class="node">injected script</span><i>→</i><span class="node hot">vulnerable app</span><i>→</i><span class="node">attacker server</span>
+      </div>
+      <span class="plb">Security</span>
+      <div class="pbd">
+        <div class="pn">COURSEWORK · XSS</div>
+        <h3>Cross-Site Scripting Demo</h3>
+        <p>A deliberately vulnerable Flask app plus an attacker server that demonstrates an XSS attack end to end, including credential theft through a fake login page. Containerised with Docker Compose so it runs in isolation.</p>
+        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">XSS</span><span class="tg g">SQLite</span><span class="tg g">Docker Compose</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Pritra-console-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/Cross-Site-Scripting" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="web">
-      <div class="pb_ b"></div>
-      <span class="plb">JavaScript</span>
+    <article class="pc r" data-c="security">
+      <div class="pimg pdiag" role="img" aria-label="Layers: bcrypt hashing, rate limiting, TOTP two-factor, OAuth2">
+        <span class="node">bcrypt</span><i>→</i><span class="node">rate limit</span><i>→</i><span class="node hot">TOTP 2FA</span><i>→</i><span class="node">OAuth2</span>
+      </div>
+      <span class="plb">Security</span>
       <div class="pbd">
-        <div class="pn">PROJ 07 · 2023 · ⭐1</div>
-        <h3>Tic-Tac-Toe App</h3>
-        <p>Classic two-player tic-tac-toe game in vanilla JavaScript with clean UI, game state management, win detection logic, and turn-based play.</p>
-        <div class="tgs"><span class="tg">JavaScript</span><span class="tg">HTML</span><span class="tg">CSS</span></div>
+        <div class="pn">COURSEWORK · AUTH</div>
+        <h3>User Authentication</h3>
+        <p>An authentication system with bcrypt-hashed credentials, brute-force protection through rate limiting and timeouts, TOTP two-factor authentication compatible with authenticator apps, and an OAuth2 authorization-code flow.</p>
+        <div class="tgs"><span class="tg g">Flask</span><span class="tg g">bcrypt</span><span class="tg g">TOTP 2FA</span><span class="tg g">OAuth2</span><span class="tg g">Docker</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Tic-tac-toe-App" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/User-Authentication" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="algo">
-      <div class="pb_ o"></div>
-      <span class="plb">C++</span>
-      <div class="pbd">
-        <div class="pn">PROJ 08 · 2024</div>
-        <h3>Infix → Postfix Converter</h3>
-        <p>C++ program evaluating complex math: converts infix to postfix using stack-based algorithms. Supports sin, cos, log, π, exponentiation, and variable detection.</p>
-        <div class="tgs"><span class="tg">C++</span><span class="tg">Stack / Algorithms</span><span class="tg">Math parsing</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/infix-to-postfix-converter" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
+    <!-- SYSTEMS -->
+    <article class="pc r" data-c="systems">
+      <div class="pimg pdiag" role="img" aria-label="Kernel stack: bootloader, interrupts, memory management, scheduling">
+        <span class="node">bootloader</span><i>→</i><span class="node">interrupts</span><i>→</i><span class="node hot">memory</span><i>→</i><span class="node">scheduling</span>
       </div>
-    </div>
-
-    <div class="pc r" data-c="systems">
-      <div class="pb_ g"></div>
-      <span class="plb">C · Assembly</span>
+      <span class="plb">C · x86</span>
       <div class="pbd">
-        <div class="pn">PROJ 09 · 2025</div>
-        <h3>OS Development (IKT218)</h3>
-        <p>Operating system built from scratch as part of university coursework. Covers bootloader implementation, memory management, interrupt handling, and basic process scheduling.</p>
-        <div class="tgs"><span class="tg">C</span><span class="tg">Assembly</span><span class="tg">OS Development</span><span class="tg">Memory Management</span></div>
+        <div class="pn">2025 · UIA IKT218</div>
+        <h3>Operating System from Scratch</h3>
+        <p>A bootable x86 kernel built as university coursework: bootloader hand-off, interrupt handling, memory management and basic process scheduling.</p>
+        <div class="tgs"><span class="tg">C</span><span class="tg">x86</span><span class="tg">OS development</span><span class="tg">Memory management</span></div>
         <div class="plnks">
           <a href="https://github.com/naibwedi/2025-ikt218-osdev" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="pc r" data-c="systems">
-      <div class="pb_ o"></div>
-      <span class="plb">C++ · Embedded</span>
+    <article class="pc r" data-c="systems">
+      <div class="pimg pdiag" role="img" aria-label="Flow: infix expression to stack to postfix to result">
+        <span class="node">infix</span><i>→</i><span class="node hot">stack</span><i>→</i><span class="node">postfix</span><i>→</i><span class="node">result</span>
+      </div>
+      <span class="plb">C++</span>
       <div class="pbd">
-        <div class="pn">PROJ 10 · 2024</div>
-        <h3>Mbed OS Embedded Project</h3>
-        <p>Embedded systems project running on microcontroller hardware with Mbed OS. Covers hardware interfacing, sensor data handling, and real-time task execution.</p>
-        <div class="tgs"><span class="tg">C++</span><span class="tg">Mbed OS</span><span class="tg">Embedded Systems</span><span class="tg">IoT</span></div>
+        <div class="pn">2024 · ALGORITHMS</div>
+        <h3>Infix → Postfix Evaluator</h3>
+        <p>Converts infix expressions to postfix with a stack-based algorithm and evaluates them. Supports sin, cos, log, π, exponentiation and variables.</p>
+        <div class="tgs"><span class="tg">C++</span><span class="tg">Stacks</span><span class="tg">Parsing</span></div>
         <div class="plnks">
-          <a href="https://github.com/naibwedi/Mbed-OS-project-" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
+          <a href="https://github.com/naibwedi/infix-to-postfix-converter" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
         </div>
       </div>
-    </div>
-
-    <div class="pc r" data-c="algo">
-      <div class="pb_ t"></div>
-      <span class="plb">Scala</span>
-      <div class="pbd">
-        <div class="pn">PROJ 11 · 2024</div>
-        <h3>Scala Functional Programming</h3>
-        <p>Functional programming project in Scala covering immutable data structures, higher-order functions, pattern matching, and type-safe abstractions.</p>
-        <div class="tgs"><span class="tg">Scala</span><span class="tg">Functional Programming</span><span class="tg">Data Structures</span></div>
-        <div class="plnks">
-          <a href="https://github.com/naibwedi/scala-project" target="_blank" rel="noopener noreferrer" class="pla">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
+    </article>
 
   </div>
+  <p class="more r"><a href="https://github.com/naibwedi?tab=repositories" target="_blank" rel="noopener noreferrer">See every repository on GitHub ↗</a></p>
 </section>
 
 <div class="stripe"></div>
@@ -330,40 +461,41 @@
   <div class="sl">05 / Education</div>
   <h2 class="st r">My <span class="a">Journey</span></h2>
   <div class="el">
-    <div class="eit r"><div class="eyr">2023 – 2026</div><h3>Ingeniørfag – Data (Bachelor, 3rd year)</h3><p>Universitetet i Agder (UiA)</p></div>
-    <div class="eit r"><div class="eyr">2021 – 2023</div><h3>Self-study &amp; Professional Development</h3><p>Web development, networking, and UX design via Domestika, Udemy, and freeCodeCamp</p></div>
-    <div class="eit r"><div class="eyr">2020 – 2021</div><h3>IKT Servicefag (Vg2)</h3><p>Sjøvegan VGS</p></div>
-    <div class="eit r"><div class="eyr">2019 – 2020</div><h3>Elektrofag (Vg1)</h3><p>Bardufoss VGS</p></div>
-    <div class="eit r"><div class="eyr">2018 – 2019</div><h3>Ungdomsskole</h3><p>Finnsnes Ungdomsskole</p></div>
+    <div class="eit r"><div class="eyr">2026 – Present</div><h3>Master's — Cybersecurity</h3><p>In progress</p></div>
+    <div class="eit r"><div class="eyr">Aug 2023 – Jun 2026</div><h3>B.Eng. — Computer Engineering (Ingeniørfag – Data)</h3><p>University of Agder (UiA) · Completed June 2026</p></div>
+    <div class="eit r"><div class="eyr">2021 – 2023</div><h3>ICT Service apprenticeship &amp; self-study</h3><p>Vågsbygd vgs · Web development, networking and UX design via Domestika, Udemy and freeCodeCamp</p></div>
+    <div class="eit r"><div class="eyr">2020 – 2021</div><h3>IKT Servicefag (Vg2)</h3><p>Sjøvegan vgs</p></div>
+    <div class="eit r"><div class="eyr">2019 – 2020</div><h3>Elektrofag (Vg1)</h3><p>Bardufoss vgs</p></div>
   </div>
   <div class="ethdiv r"><span>✦</span></div>
-  <h3 class="r" style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:1.5rem;color:var(--ink)">Certificates &amp; Courses</h3>
+  <h3 class="r cert-h">Certificates &amp; Courses</h3>
   <div class="cg r">
-    <div class="cc"><div class="clb">Certificate</div><strong>IKT-servicemedarbeider</strong><p>Vågsbygd VGS</p></div>
-    <div class="cc"><div class="clb">Certificate</div><strong>JS Algorithms &amp; Data Structures</strong><p>freeCodeCamp</p></div>
-    <div class="cc"><div class="clb">Certificate</div><strong>UX Design</strong><p>Google Certification (2021)</p></div>
-    <div class="cc"><div class="clb">Certificate</div><strong>CompTIA Network+</strong><p>Udemy (2021)</p></div>
+    <div class="cc"><div class="clb">Trade certificate</div><strong>IKT-servicemedarbeider (fagbrev)</strong><p>Vågsbygd vgs</p></div>
+    <div class="cc"><div class="clb">Certificate</div><strong>JavaScript Algorithms &amp; Data Structures</strong><p>freeCodeCamp</p></div>
+    <div class="cc"><div class="clb">Certificate</div><strong>UX Design</strong><p>Google (2021)</p></div>
+    <div class="cc"><div class="clb">Course</div><strong>CompTIA Network+</strong><p>Udemy (2021)</p></div>
     <div class="cc"><div class="clb">Course</div><strong>Web Development</strong><p>Domestika / Udemy (2020–2022)</p></div>
   </div>
 </section>
+
+</main>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="sl">06 / Contact</div>
   <h2 class="st r">Let's <span style="color:var(--gold-pale)">Connect</span></h2>
-  <p class="cdesc r">Open to full-time positions, collaborations and interesting projects. Let's build something great together.</p>
+  <p class="cdesc r">Open to interesting roles, collaborations and conversations about backend, AI or security. Based in Norway.</p>
   <div class="cls r">
     <a href="mailto:naibmehari@gmail.com" class="cla">✉ naibmehari@gmail.com</a>
     <a href="/Naibe-Mehari-CV.pdf" class="cla" download>↓ Download CV (PDF)</a>
     <a href="https://github.com/naibwedi" target="_blank" rel="noopener noreferrer" class="cla">↗ github.com/naibwedi</a>
     <a href="https://www.linkedin.com/in/naib-mehari-95690114a/" target="_blank" rel="noopener noreferrer" class="cla">in LinkedIn</a>
-    <a href="https://tigrigna-latin.netlify.app/" target="_blank" rel="noopener noreferrer" class="cla">↗ Live Project</a>
   </div>
 </section>
 
 <footer>
   <div class="stripe" style="margin-bottom:1.5rem"></div>
-  Built by <span>Naibe Mehari Tekle</span>
+  © 2026 <span>Naibe Mehari Tekle</span> · Hand-built with HTML, CSS and JavaScript · <a href="https://github.com/naibwedi/naibe-portfolio" target="_blank" rel="noopener noreferrer">Source</a>
 </footer>
 
 <script src="main.js"></script>
